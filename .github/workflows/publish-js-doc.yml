@@ -15,6 +15,11 @@ jobs:
         npm install documentation
         node_modules/.bin/documentation build -f html -o docs src/index.js
         
+    - uses: actions/upload-artifact@v1
+      with:
+        name: js-docs
+        path: docs
+      
     - name: Deploy
       if: success()
       uses: crazy-max/ghaction-github-pages@v1
