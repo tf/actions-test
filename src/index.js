@@ -1,3 +1,4 @@
 /** Some docs */
 function Image() {
+  
 }
