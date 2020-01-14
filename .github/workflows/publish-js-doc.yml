@@ -15,18 +15,10 @@ jobs:
         npm install documentation
         node_modules/.bin/documentation build -f html -o docs src/index.js
         
-    - uses: actions/upload-artifact@v1
-      with:
-        name: js-docs
-        path: docs
-      
     - name: Deploy
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v1
-      with:
-        target_branch: gh-pages
-        build_dir: docs
-        allow_empty_commit: false
-        keep_history: true
+      uses: peaceiris/actions-gh-pages@v2
       env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_PAT }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./docs
+    
