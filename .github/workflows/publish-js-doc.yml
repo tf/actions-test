@@ -16,11 +16,11 @@ jobs:
         output: ./docs/<branch>/theme
         input: ./src
         theme: pageflow
-        themePackage: tf/sassdoc-theme-pageflow#fs-extra
+        themePackage: tf/sassdoc-theme-pageflow#dist
         
     - uses: codevise/documentation-js-action@master
       with:
-        output: ./docs/${{ github.ref }}/js
+        output: ./docs/<branch>/js
         input: ./src
         github: true
         config: ./documentation.yml
