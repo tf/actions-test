@@ -13,6 +13,8 @@ jobs:
     - uses: codevise/documentation-js-action@master
       with:
         output: ./docs
+        input: ./src
+        github: true
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
