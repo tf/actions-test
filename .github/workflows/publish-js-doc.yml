@@ -12,7 +12,6 @@ jobs:
       
     - uses: codevise/documentation-js-action@master
       with:
-        input: ./src
         output: ./docs
         
     - name: Deploy
