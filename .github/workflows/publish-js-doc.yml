@@ -35,6 +35,6 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_PAT }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./docs
-
+        SCRIPT_MODE: true
   
     
