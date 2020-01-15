@@ -10,9 +10,15 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       
+    - uses: codevise/sassdoc-action@master
+      with:
+        output: ./docs/theme
+        input: ./src
+        theme: pageflow
+          
     - uses: codevise/documentation-js-action@master
       with:
-        output: ./docs
+        output: ./docs/js
         input: ./src
         github: true
         config: ./documentation.yml
