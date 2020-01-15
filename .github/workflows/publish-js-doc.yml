@@ -28,9 +28,13 @@ jobs:
         themePackage: codevise/pageflow-documentation-js-theme#master
         
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2
+      run: |
+        wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2/entrypoint.sh
+        bash ./entrypoint.sh
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_PAT }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./docs
+
+  
     
