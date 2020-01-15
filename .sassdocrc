@@ -1,0 +1,5 @@
+package:
+  title: "Pageflow Theme"
+groups:
+  standard: "Defaults"
+  widgets: "Widget Defaults"
