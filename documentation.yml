@@ -1,0 +1,7 @@
+toc:
+  - name: Geography
+    description: |
+      These are Mapbox GL JS's ways of representing locations
+      and areas on the sphere.
+    childeren:
+      - Image
