@@ -15,7 +15,7 @@ jobs:
         output: ./docs
         input: ./src
         github: true
-        theme: pageflow
+        theme: pageflow-documentation-js-theme
         themePackage: codevise/pageflow-documentation-js-theme#master
         
     - name: Deploy
