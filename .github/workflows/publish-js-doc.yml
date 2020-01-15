@@ -15,7 +15,6 @@ jobs:
         output: ./docs/theme
         input: ./src
         
-          
     - uses: codevise/documentation-js-action@master
       with:
         output: ./docs/js
