@@ -13,7 +13,7 @@ jobs:
       
     - uses: codevise/sassdoc-action@master
       with:
-        output: ./docs/${{ github.ref }}/theme
+        output: ./docs/<branch>/theme
         input: ./src
         theme: pageflow
         themePackage: tf/sassdoc-theme-pageflow#fs-extra
