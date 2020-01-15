@@ -13,14 +13,14 @@ jobs:
       
     - uses: codevise/sassdoc-action@master
       with:
-        output: ./docs/theme
+        output: ./docs/${{ github.ref }}/theme
         input: ./src
         theme: pageflow
         themePackage: tf/sassdoc-theme-pageflow#fs-extra
         
     - uses: codevise/documentation-js-action@master
       with:
-        output: ./docs/js
+        output: ./docs/${{ github.ref }}/js
         input: ./src
         github: true
         config: ./documentation.yml
